@@ -1,1 +1,1 @@
-# rebealvarez.github.io-TriviaGame
+# rebecalvarez.github.io-TriviaGame
