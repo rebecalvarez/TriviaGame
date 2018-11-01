@@ -1,0 +1,163 @@
+
+/*  */
+
+body {
+    font-family: 'Montserrat','Muli',sans-serif;
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+}
+
+
+.content {
+    background-color: rgb(255, 255, 255,0.9);
+    width: 960px;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    height: 600px;
+    margin-top: 10px;
+    border: 9px solid #2E9FB6;
+    border-radius: 15px;
+}
+.timer-text {
+    font-size: 20px;
+    font-family: 'Proza Libre', sans-serif;
+    margin: 0 auto;
+}
+.timestyle {
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0,0.8);
+    color: #fff;
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 3px solid #2E9FB6;
+
+    
+}
+
+.q-style{
+    font-size: 20px;
+    font-family: 'Proza Libre', sans-serif;
+
+}
+
+.answer-button button {
+    width: 300px;
+    height: 100px;
+    font-weight: 800;
+
+}
+.ch-1{
+    margin-top: 50px;
+    margin-left: 100px;
+    float: left;
+    
+}
+
+.ch-2{
+    margin-top: 50px;
+    margin-right: 100px;
+    float: right;
+}
+
+
+.ch-3{
+    margin-top: 50px;
+    margin-left: 100px;
+    float: left;
+}
+
+.ch-4{
+    margin-top: 50px;
+    margin-right: 100px;
+    float: right;
+}
+
+.results {
+    
+    font-family: 'Proza Libre', sans-serif;
+    display: block;
+    margin: 0 auto;
+    width: 700px;
+}
+.correct-Answer {
+    
+    font-family: 'Proza Libre', sans-serif;
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+}
+
+.c-image {
+    margin: 0 auto;
+    width: 350px;  
+}
+
+.start {
+    width: 150px;
+    margin: 0 auto;
+}
+
+/* The Modal (background) */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: -180px;
+    width: 100%; /* Full width */
+    height: 900px; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(54, 54, 10); /* Fallback color */
+    background-color: rgba(44, 40, 5, 0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 80%; /* Could be more or less, depending on screen size */
+    height: 550px;
+    width: 600px;
+     border: 1px solid #888;
+   
+}
+.recording{
+    height: 250px;
+    width: 550px;
+    border: 5px solid rgb(88, 23, 50);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+
+}
+.message{
+    font-size: 20px;
+    font-family: 'VT323', monospace;
+    margin-top: -10px;
+}
+.danger{
+    margin-top: -10px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
