@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre:800|VT323" rel="stylesheet">
+    <title>Trivia game</title>
+</head>
+<body>
+  <!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content- Instructions -->
+  <div class="modal-content">
+      
+    <h1 class="danger">DANGER!! </h1>
+    <p class="message">The security system has malfunctioned and erroneously assumed you are a threat to the Spacecraft. To protect the information onboard, the computer will eject all the air out into space, unless you can prove your identity. This can be done by answering at least 5 questions correctly. Hurry!! There isn’t much time left… </p>
+    <img class="recording"src="assets/images/recording.gif"/>
+    <button class="btn btn-warning start text-center" id="btn-start">Unlock Oxygen</button>
+  </div>
+  
+</div> 
+
+  <!-- End of modal -->
+
+  <!-- Begining of Game -->
+<div class="content">
+ 
+  <h1 class="text-center" id="title">Unlock Oxygen for the Spacecraft</h1>
+
+  <div id="gamecontent">
+ <!-- Timer -->
+  <div class="timer-text text-center">Time Remaining</div>
+  <div id="timer" class="timestyle text-center"></div>
+ <!-- Questions -->
+  <div class="q-style text-center" id="question"></div>
+
+  <div class="answers">
+    <div class="an-top-row">
+    <div class="answer-button ch-1 " id="ch-1"></div>
+    <div class="answer-button ch-2 " id="ch-2"></div>
+    </div>
+
+    <div class="an-bottom-row">
+        <div class="answer-button ch-3 " id="ch-3"></div>
+        <div class="answer-button ch-4 " id="ch-4"></div>
+        </div>
+  </div>
+  
+</div>
+<div class="text-center">
+<div class="correct-Answer" id="correctAnswer"></div> <!-- Our of time answer-->
+<!-- Results -->
+<div class="results"></div>
+
+</div>
+</div>
+ 
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>

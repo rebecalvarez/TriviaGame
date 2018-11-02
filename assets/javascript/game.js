@@ -98,16 +98,6 @@ loadQuestion: function(){
     timer= setInterval(this.countdown, 1000);
    console.log(this.currentQuestion, "this is current question" );
     $("#question").html(this.questions[this.currentQuestion].question);
-    
-        //  $('#ch-1').html(this.questions[this.currentQuestion].choices[0]);
-        //  $('#ch-1').data(this.questions[this.currentQuestion].choices[0]);
-        //  $('#ch-2').html(this.questions[this.currentQuestion].choices[1]);
-        //  $('#ch-2').data(this.questions[this.currentQuestion].choices[1]);
-        //  $('#ch-3').html(this.questions[this.currentQuestion].choices[2]);
-        //  $('#ch-3').data(this.questions[this.currentQuestion].choices[2]);
-        //  $('#ch-4').html(this.questions[this.currentQuestion].choices[3]);
-        //  $('#ch-4').data(this.questions[this.currentQuestion].choices[3]);
-
 
          $('#ch-1').html('<button   class="btn btn-outline-info" data-name="' 
           + this.questions[this.currentQuestion].choices[0] + '">' 
@@ -137,11 +127,11 @@ nextQuestion: function() {
 }
 ,
 timeUp: function(){
-    // debugger
+    
     clearInterval(timer);
+    triviaGame.wrongaudio.play();
     $("#timer").html(this.counter);
     $("#gamecontent").hide();
-    // $(".results").show();
     $("#correctAnswer").show();
     $("#correctAnswer").html('<h2>Out of Time!</h2>' + '<br> <h3>The Answer is :' + this.questions[this.currentQuestion].answer + 
     '</h3> <br> <img class="c-image" src="' + this.questions[this.currentQuestion].pic + '" />');
@@ -181,10 +171,10 @@ results : function (){
 
 
 
-    $(document).on('click','#btn-start', function() {
+     $(document).on('click','#btn-start', function() {
         $('#gamecontent').show(); 
-        $(".results").hide();
-        triviaGame.playGame();
+         $(".results").hide();
+    
     });
 }
 
@@ -275,25 +265,3 @@ $(document).ready(function() {
     $("#my_audio").get(0).play();
 });
 
-// $( "#myModal" ).ready(triviaGame.entranceaudio.play);
-  
-
-
-// document.getElementById('btn-start').addEventListener('click',function() {
-//     document.getElementById('myModal').style.display = 'none';
-//     triviaGame.playGame();
-// })
-
-
-
-// qAsked: [] //puts al the questions asked on an array, to compare if all 
-//            //the questions are asked and if the array is full with all the questions
-// ,
-// questionFound: ""
-// ,
-// findQuestion : function (){
- 
-// },
-// timer: function(){
-
-// },
